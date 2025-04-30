@@ -1,11 +1,12 @@
 <chapter>
   <parentseries>chou-kuse</parentseries>
   <parentdisplayname>Cho Kuse ni Narisou</parentdisplayname>
-  <chaptersummary>DESCRIPTION HERE PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</chaptersummary>
+  <chaptersummary>As it turns out, Nagisa and Reiko have history. When they were very young, Reiko stole something <i>else</i> from Nagisa.</chaptersummary>
+  <externalserialization>RunRun</externalserialization>
 
-  <chapterdisplaynum>xx</chapterdisplaynum>
+  <chapterdisplaynum>13.5</chapterdisplaynum>
   <chapternum>13.5</chapternum>
-  <pagecount>xx</pagecount>
+  <pagecount>35</pagecount>
 
   <next-series>chou-kuse</next-series>
   <next-number>14</next-number>
@@ -13,5 +14,12 @@
  
   <previous-series>chou-kuse</previous-series>
   <previous-chapter>13</previous-chapter>
-  <previous-target-page>xx</previous-target-page>
+  <previous-target-page>33</previous-target-page>
+
+  <external-publication>
+    <ext-pub-magazine>RunRun</ext-pub-magazine>
+    <ext-pub-year>1994</ext-pub-year>
+    <ext-pub-month>07</ext-pub-month>
+    <ext-issue-id>RunRun 1994-07</ext-issue-id>
+  </external-publication>
 </chapter>
