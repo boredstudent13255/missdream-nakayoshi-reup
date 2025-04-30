@@ -1,0 +1,17 @@
+<chapter>
+  <parentseries>totsuzen</parentseries>
+  <parentdisplayname>Totsuzen Parallel!</parentdisplayname>
+  <chaptersummary>No Description Set</chaptersummary>
+
+  <chapterdisplaynum>2</chapterdisplaynum>
+  <chapternum>02</chapternum>
+  <pagecount>24</pagecount>
+
+  <next-series>totsuzen</next-series>
+  <next-number>03</next-number>
+  <next-target-page>default</next-target-page>
+ 
+  <previous-series>totsuzen</previous-series>
+  <previous-chapter>01</previous-chapter>
+  <previous-target-page>34</previous-target-page>
+</chapter>
