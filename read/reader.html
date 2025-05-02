@@ -62,6 +62,10 @@ img {
   float: right;
   background-color: rgba(0,255,0,0)
 }
+.pagequeuer {
+  width: 0px;
+  height: 0px;
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -80,8 +84,8 @@ img {
     </div> 
 
     <div class="pageshifter">
-      <div class="pageadvancer" onclick="advancePage()"> </div>
-      <div class="pageregresser" onclick="retreatPage()"> </div>
+      <div class="pageadvancer" onclick="advancePage()"><img class="pagequeuer" id="pagequeue1"/></div>
+      <div class="pageregresser" onclick="retreatPage()"><img class="pagequeuer" id="pagequeue2"/></div>
     </div>
 
     <div class="reader-content">
@@ -300,8 +304,20 @@ function updatePages() {
 convertPagesToString()
 let injectpageodd = document.getElementById("Page-Left");
 let injectpageeven = document.getElementById("Page-Right");
+let queuepageodd = document.getElementById("pagequeue1");
+let queuepageeven = document.getElementById("pagequeue2");
 injectpageodd.src = "../read/" + TITLE + "/Ch." + CHAPT + "/" + TITLE + "-c" + CHAPT + "-p" + PAGEO + ".jpg";
 injectpageeven.src = "../read/" + TITLE + "/Ch." + CHAPT + "/" + TITLE + "-c" + CHAPT + "-p" + PAGEE + ".jpg";
+++PAGEO;
+++PAGEO;
+++PAGEE;
+++PAGEE;
+queuepageodd.src = "../read/" + TITLE + "/Ch." + CHAPT + "/" + TITLE + "-c" + CHAPT + "-p" + PAGEO + ".jpg";
+queuepageeven.src = "../read/" + TITLE + "/Ch." + CHAPT + "/" + TITLE + "-c" + CHAPT + "-p" + PAGEE + ".jpg";
+--PAGEO;
+--PAGEO;
+--PAGEE;
+--PAGEE;
 
 //Hides unpopulated <img> tags. Based on part of the code that generates the issue download pages.
 const images = document.querySelectorAll('img');
