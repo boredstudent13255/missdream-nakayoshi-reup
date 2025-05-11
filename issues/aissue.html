@@ -195,7 +195,7 @@ download: <a class="pinklink" href="https://archive.org/details/sierracomix-addi
 const urlParams = new URLSearchParams(window.location.search);
 //Gets the query string for the contributor of the scans/issue
 var querystring = urlParams.get('issue');
-if (urlParams.get('uploader') === "null") {
+if (urlParams.get('uploader') === null) {
 var uploader = "SierraComix";
 } else {
 var uploader = urlParams.get('uploader');
