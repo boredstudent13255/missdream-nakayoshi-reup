@@ -191,22 +191,28 @@ download: <a class="pinklink" href="https://archive.org/details/sierracomix-addi
 <script>
 //Gets the query string "issue" to var "querystring"
 const urlParams = new URLSearchParams(window.location.search);
+//Gets the query string for the contributor of the scans/issue
 var querystring = urlParams.get('issue');
+if (urlParams.get('uploader') === "null") {
+var uploader = "SierraComix";
+} else {
+var uploader = urlParams.get('uploader');
+}
 
 
 //Generates the archive.org download url based on "querystring" and injects it into the appropriate <a> tag
 let issueurlinject = document.getElementById("urlinject");
-issueurlinject.href = "https://archive.org/download/sierracomix-additional-back-issues/[SierraComix] " + querystring + ".zip";
+issueurlinject.href = "https://archive.org/download/sierracomix-additional-back-issues/[" + uploader + "] " + querystring + ".zip";
 
 
 //Generates the second archive.org download url based on "querystring" and injects it into the appropriate <a> tag
 //let issueurlinject3 = document.getElementById("urlinject3");
-//issueurlinject3.href = "https://archive.org/download/sierracomix-additional-back-issues/[SierraComix-RawScans] " + querystring + ".zip";
+//issueurlinject3.href = "https://archive.org/download/sierracomix-additional-back-issues/[" + uploader + "] " + querystring + ".zip";
 
 
 //Generates a link to the archive.org images page based on "querystring" and injects it into the appropriate <a> tag
 let issueurlinject2 = document.getElementById("urlinject2");
-issueurlinject2.href = "https://archive.org/download/sierracomix-additional-back-issues/[SierraComix] " + querystring + ".zip/";
+issueurlinject2.href = "https://archive.org/download/sierracomix-additional-back-issues/[" + uploader + "] " + querystring + ".zip/";
 
 
 //Injects "querystring" into the title
