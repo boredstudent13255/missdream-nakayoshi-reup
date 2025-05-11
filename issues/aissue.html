@@ -139,6 +139,7 @@ body {
     </div>
       <div class="content" >
         <span id="textinject" class="titletext">$ISSUE_TITLE</span>
+         <span id="contributorinject" class="">Credit Unpopulated</span>
         <div class="lore">
 <p>
 <span id="current-issue-autofill-from-txt">JS fail or broken URL! (This page is customized to the selected issue using the query string, nothing on this page will work until the issue is corrected)</span>
@@ -219,6 +220,10 @@ issueurlinject2.href = "https://archive.org/download/sierracomix-additional-back
 let issuetextinject = document.getElementById("textinject");
 issuetextinject.innerHTML = querystring;
 
+//Injects "querystring" into the title
+let issuecontinject = document.getElementById("contributorinject");
+issuecontinject.innerHTML = "Scans/Issue submitted by " + uploader;
+   
 
 //Deletes the JS warning text, because if this runs, JS is working
 let erasejswarning = document.getElementById("current-issue-autofill-from-txt");
